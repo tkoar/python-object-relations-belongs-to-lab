@@ -5,7 +5,7 @@ from person import Person
 from car import Car
 
 class TestQueryPersonClassMethods(unittest.TestCase):
-    
+
     global dwight
     dwight = Person("Dwight Schrute", "Paper Salesperson")
     global pam
@@ -48,6 +48,9 @@ class TestQueryPersonClassMethods(unittest.TestCase):
         self.assertEqual(datsun.owner, dwight)
         self.assertItemsEqual(Car._all, [ford_minivan, corolla, chrysler, chrylser300, toyota, datsun])
         self.assertItemsEqual(Car.all(), [ford_minivan, corolla, chrysler, chrylser300, toyota, datsun])
+
+    def test_my_car_person_instance_method(self):
+        self.assertEqual(stanley.my_car(), chrylser300)
 
     def test_cars_driven_by_class_method(self):
         self.assertItemsEqual(Car.cars_driven_by("Secretary"), [toyota])

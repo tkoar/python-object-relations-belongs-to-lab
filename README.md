@@ -105,6 +105,22 @@ Alright, now let's try figuring out which employees drive toyotas, what the aver
 
 
 ```python
+stanley.my_car() 
+# person instance method that returns the car instance 
+# object that belongs to the person instance object
+# example: chrysler300
+```
+
+
+```python
+michael.drives_same_make_as_me() 
+# instance method that returns a list of other dunder mifflin employees 
+# that drive the same make car as the instance object it was called on
+# example: [stanley]
+```
+
+
+```python
 Person.has_oldest_car() # class method that returns the person instance object that owns the oldest car
 ```
 
@@ -116,14 +132,6 @@ Person.drives_a("Toyota")
 Person.drives_a("Ford") 
 # class method that returns a list of person instance objects that own a Ford
 # example: [meredith]
-```
-
-
-```python
-michael.drives_same_make_as_me() 
-# instance method that returns a list of other dunder mifflin employees 
-# that drive the same make car as the instance object it was called on
-# example: [stanley]
 ```
 
 
