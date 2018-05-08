@@ -105,7 +105,7 @@ Alright, now let's try figuring out which employees drive toyotas, what the aver
 
 
 ```python
-stanley.my_car() 
+stanley.find_my_car() 
 # person instance method that returns the car instance 
 # object that belongs to the person instance object
 # example: chrysler300
